@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Raíz | Tostaduría de café de especialidad peruano</title>
+  <meta name="description" content="Café Raíz tuesta café de especialidad de pequeños productores peruanos. Conoce nuestros orígenes, niveles de tueste y cómo comprarlo en grano o molido.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://TU-USUARIO.github.io/cafe-raiz/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Café Raíz | Café de especialidad peruano">
+  <meta property="og:description" content="Tuestes pequeños, orígenes trazables y café fresco.">
+  <meta property="og:locale" content="es_PE">
+  <meta name="theme-color" content="#1c2a26">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"CafeOrCoffeeShop","name":"Café Raíz",
+   "description":"Tostaduría de café de especialidad peruano.","servesCuisine":"Café",
+   "url":"https://TU-USUARIO.github.io/cafe-raiz/","email":"hola@caferaiz.example"}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <a class="logo" href="#inicio" aria-label="Café Raíz, ir al inicio">Café Raíz</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" aria-label="Principal">
+      <ul>
+        <li><a href="#cafes">Cafés</a></li>
+        <li><a href="#tueste">Tueste</a></li>
+        <li><a href="#proceso">Del cafetal a tu taza</a></li>
+        <li><a href="#contacto">Pedidos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section id="inicio" class="hero" aria-labelledby="titulo-principal">
+      <h1 id="titulo-principal">Café de especialidad peruano, tostado en lotes pequeños</h1>
+      <p class="lead">Compramos directo a familias cafetaleras de Cajamarca, Junín y Cusco, y tostamos cada semana para que lo recibas fresco.</p>
+      <p><a class="btn" href="#cafes">Ver cafés disponibles</a></p>
+    </section>
+
+    <section id="novedades" aria-labelledby="t-nov">
+      <h2 id="t-nov">Novedades de la temporada</h2>
+      <div class="carousel" role="region" aria-roledescription="carrusel" aria-label="Novedades de Café Raíz">
+        <div class="track" id="track" aria-live="off">
+          <article class="slide s1" aria-roledescription="diapositiva" aria-label="1 de 3">
+            <h3>Nuevo lote de Junín</h3>
+            <p>Llegó la cosecha de este año: notas de naranja y flor blanca, tostado esta semana.</p>
+          </article>
+          <article class="slide s2" aria-roledescription="diapositiva" aria-label="2 de 3">
+            <h3>Suscripción mensual</h3>
+            <p>Recibe una bolsa de 250 g cada mes y elige el origen cuando quieras cambiarlo.</p>
+          </article>
+          <article class="slide s3" aria-roledescription="diapositiva" aria-label="3 de 3">
+            <h3>Taller de preparación</h3>
+            <p>Un sábado al mes enseñamos a preparar café filtrado en casa. Cupos limitados.</p>
+          </article>
+        </div>
+        <div class="controls">
+          <button type="button" id="prev" aria-label="Diapositiva anterior">Anterior</button>
+          <div class="dots" id="dots"></div>
+          <button type="button" id="next" aria-label="Diapositiva siguiente">Siguiente</button>
+          <button type="button" id="pausa" aria-pressed="false">Pausar</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cafes" aria-labelledby="t-cafes">
+      <h2 id="t-cafes">Cafés disponibles</h2>
+      <p class="intro">Tres orígenes, una bolsa de 250 g cada uno. Elige por el sabor que buscas.</p>
+      <div class="grid">
+        <article class="cafe">
+          <h3>Cajamarca</h3>
+          <p class="meta">Altura 1 800 m · Tueste medio</p>
+          <p>Chocolate con leche, panela y almendra. Dulce y redondo, ideal para el café de todos los días.</p>
+          <p class="price">S/ 38</p>
+        </article>
+        <article class="cafe">
+          <h3>Junín</h3>
+          <p class="meta">Altura 1 650 m · Tueste claro</p>
+          <p>Naranja, flor blanca y azúcar rubia. Acidez viva, pensado para filtrados.</p>
+          <p class="price">S/ 42</p>
+        </article>
+        <article class="cafe">
+          <h3>Cusco</h3>
+          <p class="meta">Altura 1 900 m · Tueste oscuro</p>
+          <p>Cacao amargo, nuez tostada y cuerpo denso. Funciona con espresso y con leche.</p>
+          <p class="price">S/ 40</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="tueste" class="tueste" aria-labelledby="t-tueste">
+      <h2 id="t-tueste">Cómo cambia el sabor con el tueste</h2>
+      <p class="intro">Elige un nivel y mira qué esperar en la taza.</p>
+      <div class="roast" role="radiogroup" aria-label="Nivel de tueste">
+        <button role="radio" aria-checked="true" data-level="claro">Claro</button>
+        <button role="radio" aria-checked="false" data-level="medio">Medio</button>
+        <button role="radio" aria-checked="false" data-level="oscuro">Oscuro</button>
+      </div>
+      <div class="roast-out" aria-live="polite">
+        <span class="bean" id="bean" aria-hidden="true"></span>
+        <p id="roast-text"></p>
+      </div>
+    </section>
+
+    <section id="proceso" aria-labelledby="t-proceso">
+      <h2 id="t-proceso">Del cafetal a tu taza</h2>
+      <ol class="steps">
+        <li><h3>Cosecha</h3><p>Se recogen solo las cerezas maduras, a mano.</p></li>
+        <li><h3>Beneficio</h3><p>El productor lava y seca el grano al sol.</p></li>
+        <li><h3>Tueste</h3><p>Tostamos cada semana en lotes de 5 kg.</p></li>
+        <li><h3>Entrega</h3><p>Lo empacamos al día siguiente, con la fecha de tueste en la bolsa.</p></li>
+      </ol>
+    </section>
+
+    <section id="contacto" class="contacto" aria-labelledby="t-contacto">
+      <h2 id="t-contacto">Haz tu pedido</h2>
+      <p class="intro">Escríbenos con el café, la cantidad y si lo quieres en grano o molido. Respondemos en un día hábil.</p>
+      <form id="pedido">
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" required autocomplete="name">
+        <label for="cafe">Café</label>
+        <select id="cafe" name="cafe">
+          <option>Cajamarca</option><option>Junín</option><option>Cusco</option>
+        </select>
+        <label for="molido">Presentación</label>
+        <select id="molido" name="molido">
+          <option>En grano</option><option>Molido para filtrado</option><option>Molido para espresso</option>
+        </select>
+        <button class="btn" type="submit">Preparar mi pedido</button>
+        <p id="resumen" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer id="tienda">
+    <div class="foot-grid">
+      <section aria-labelledby="f-info">
+        <h2 id="f-info">Nuestra tienda</h2>
+        <address>
+          Av. Principal 123, tu ciudad, Perú<br>
+          Teléfono: <a href="tel:+51900000000">900 000 000</a><br>
+          Correo: <a href="mailto:hola@caferaiz.example">hola@caferaiz.example</a>
+        </address>
+      </section>
+      <section aria-labelledby="f-hor">
+        <h2 id="f-hor">Horario</h2>
+        <ul>
+          <li>Lunes a viernes: 8:00 a 19:00</li>
+          <li>Sábados: 9:00 a 17:00</li>
+          <li>Domingos: cerrado</li>
+        </ul>
+      </section>
+      <nav aria-label="Enlaces del pie">
+        <h2>Explorar</h2>
+        <ul>
+          <li><a href="#cafes">Cafés</a></li>
+          <li><a href="#tueste">Tueste</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Pedidos</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="legal">© <span id="anio"></span> Café Raíz. Todos los derechos reservados. Proyecto académico de diseño web estático.</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
